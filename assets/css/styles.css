@@ -1,0 +1,139 @@
+/* Definição do root com as cores do projeto */
+:root {
+  --color-background-light: #f4f4f9; /* Cor clara de fundo */
+  --color-text-dark: #333; /* Texto escuro */
+  --color-white: #ffffff; /* Branco */
+  --color-green-primary: #27ae60; /* Verde principal */
+  --color-green-hover: #218c54; /* Verde para hover */
+  --color-green-light: #e8f5e9; /* Verde claro (fundo das consultas) */
+  --color-gray-border: #ddd; /* Cinza das bordas */
+  --color-gray-label: #555; /* Cinza do texto dos labels */
+  --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra leve */
+  --color-red: #ff0000; /* Vermelho (botão cancelar) */
+  --color-red-dark: #8b0000; /* Vermelho escuro para hover */
+}
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-image: url(/assets/images/clinicaMedica.webp);
+  background-size: cover;
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-green-primary);
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--color-gray-label);
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+button {
+  background: var(--color-green-primary);
+  color: var(--color-white);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background: var(--color-green-hover);
+}
+
+.consulta-item {
+  background: var(--color-green-light);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-cancelar {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: var(--color-white);
+  background: var(--color-red);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-cancelar:hover {
+  background: var(--color-red-dark);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  select,
+  input,
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .consulta-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-cancelar {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

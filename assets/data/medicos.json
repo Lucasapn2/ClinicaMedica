@@ -1,0 +1,28 @@
+[
+  {
+    "nome": "Raissa do Carmo",
+    "idade": 27,
+    "CPF": "12345678901",
+    "especialidade": "Cardiologia",
+    "CRM": "123456",
+    "telefone": "(11) 98765-4321"
+  },
+
+  {
+    "nome": "Carlos Silva",
+    "idade": 40,
+    "CPF": "98765432100",
+    "especialidade": "Pediatria",
+    "CRM": "654321",
+    "telefone": "(21) 99876-5432"
+    
+  },
+  {
+    "nome": "Ana Oliveira",
+    "idade": 35,
+    "CPF": "45678912300",
+    "especialidade": "Dermatologia",
+    "CRM": "789012",
+    "telefone": "(31) 91234-5678"
+  }
+]
